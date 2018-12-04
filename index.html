@@ -356,19 +356,33 @@
         display: none;
       }
     </style>
+    <style>
+      li.crossed-out {
+        text-decoration: line-through;
+      }
+    </style>
 </head>
 <body>
 	<ul>
     <li><a href="/index.html">Index</a></li>
     <li><a href="/original.html">Original with Google Fonts</a></li>
-    <li><a href="/font-loader-sync.html">Web Font Loader SYNCHRONOUS</a></li>
-    <li><a href="/font-loader-async.html">Web Font Loader ASYNCHRONOUS</a></li>
+    <li class="crossed-out"><a href="/font-loader-sync.html">Web Font Loader SYNCHRONOUS</a></li>
+    <li class="crossed-out" ><a href="/font-loader-async.html">Web Font Loader ASYNCHRONOUS</a></li>
     <li><a href="/self-host.html">Self-hosted fonts</a></li>
     <li><a href="/self-host-preload.html">Self-hosted fonts with preloading</a></li>
     <li><a href="/own-font-load.html">Self-hosted own font loader</a></li>
     <li><a href="/own-font-load-with-preload.html">Self-hosted own font loader with preload</a></li>
-    </ul>
-    <hr style="margin-top: 2em">
+
+    <li style="margin-top: 1em; padding-top: 0.5em; border-top: 1px dotted gray;"><a href="/self-host-preload-fixed.html">Self-hosted fonts with preloading <strong>FIXED!</strong></a></li>
+    <li><a href="/own-font-load-with-preload-fixed.html">Self-hosted own font loader with preload <strong>FIXED!</strong></a></li>
+
+    <li style="margin-top: 1em; padding-top: 0.5em; border-top: 1px dotted gray;"><a href="/self-host-preload-fixed-swap.html">Self-hosted fonts with preloading <strong>font-display: swap; </strong></a></li>
+    <li><a href="/own-font-load-with-preload-fixed-swap.html">Self-hosted own font loader with preload <strong>font-display: swap; </strong></a></li>
+    <li><a href="/late-preload.html">Late preload with font-display: swap;</a></li>
+    
+    <li style="margin-top: 1em; padding-top: 0.5em; border-top: 1px dotted gray;"><a href="/baseline.html">Baseline with system fonts</a></li>
+  </ul>
+  <hr style="margin-top: 2em">
   <ul>
     <li>Inspired by the <a href="https://www.zachleat.com/web/font-checklist/">Font Loading Checklist</a></li>
     <li>Fonts downloaded <a href="https://fonts.google.com/featured/Plex?selection.family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400i">from Google Fonts</a>
